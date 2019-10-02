@@ -70,10 +70,17 @@
       "header": "",
       "intro": ""
     },
+    "biomass": "Should the import of biomass be banned?",
+    "ccs": "Should the application of CCS be allowed?",
+    "crossBorder": "Should the cross-border grid capacity in Europe be increased according to the TYNDP by ENTSO-E?",
+    "emissions": "Should the emissions be reduced with the pace of the ETS or faster?",
+
     "options": {
       "lowReduction": "Lítil skerjing - EU ETS cap",
       "mediumReduction": "Miðal skerjing - IPPC Pathway Zero Emissions í 2050",
-      "highReduction": "Stór skerjing - Null útlát í 2050"
+      "highReduction": "Stór skerjing - Null útlát í 2050",
+      "etsPace": "Reduce with the pace of the ETS",
+      "fasterPace": "Reduce with a faster pace"
     },
     "start": "Byrja",
     "submitChoices": "Víðari",

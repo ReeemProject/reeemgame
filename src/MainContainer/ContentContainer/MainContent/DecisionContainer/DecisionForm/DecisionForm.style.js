@@ -42,3 +42,13 @@ export const StyledFormLabel = styled(FormLabel)`
 `
 
 export const StyledGrid = styled(Grid)``
+
+export const Icon = styled.div`
+  display: flex;
+`
+
+export const HorizontalContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+`

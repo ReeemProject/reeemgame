@@ -15,40 +15,36 @@ export const Decisions = () => {
       introText: t('decisions.2020.intro'),
       individualDecisions: [
         {
-          name: 'research',
-          introText: t('decisions.2020.researchDecision'),
+          name: 'ccs1',
+          introText: t('decisions.ccs'),
+          info: t('decisions.info.ccs'),
           options: [
             {
-              value: 'Yes',
+              value: 'y',
               text: t('general.yes'),
               scenario: { C: 0 },
             },
             {
-              value: 'No',
+              value: 'n',
               text: t('general.no'),
-              scenario: { C: 1 },
+              scenario: { C: 0 },
             },
           ],
         },
         {
           name: 'emissions1',
-          introText: t('decisions.2020.emissionsDecision'),
+          introText: t('decisions.emissions'),
+          info: t('decisions.info.emissions'),
           options: [
             {
-              value: 'Low reduction rate – EU ETS cap',
-              text: t('decisions.options.lowReduction'),
+              value: 'ets',
+              text: t('decisions.options.etsPace'),
               scenario: { E: 0 },
             },
-            /* {
-              value:
-                'Medium reduction rate - IPPC Pathway Zero Emissions in 2050',
-              text: t('decisions.options.mediumReduction'),
-              scenario: { E: 9 },
-            }, */
             {
-              value: 'High reduction rate - Zero emissions in 2040',
-              text: t('decisions.options.highReduction'),
-              scenario: { E: 4 },
+              value: 'faster',
+              text: t('decisions.options.fasterPace'),
+              scenario: { E: 0 },
             },
           ],
         },
@@ -61,40 +57,69 @@ export const Decisions = () => {
       introText: t('decisions.2030.intro'),
       individualDecisions: [
         {
-          name: 'transmission',
-          introText: t('decisions.2030.transmissionDecision'),
+          name: 'ccs2',
+          introText: t('decisions.ccs'),
+          info: t('decisions.info.ccs'),
           options: [
             {
-              value: 'Yes',
+              value: 'y',
               text: t('general.yes'),
-              scenario: { T: 0 },
+              scenario: { C: 0 },
             },
             {
-              value: 'No',
+              value: 'n',
               text: t('general.no'),
-              scenario: { T: 1 },
+              scenario: { C: 0 },
             },
           ],
         },
         {
           name: 'emissions2',
-          introText: t('decisions.keepEmission'),
+          introText: t('decisions.emissions'),
+          info: t('decisions.info.emissions'),
           options: [
             {
-              value: 'Low reduction rate – EU ETS cap',
-              text: t('decisions.options.lowReduction'),
+              value: 'ets',
+              text: t('decisions.options.etsPace'),
               scenario: { E: 0 },
             },
-            /* {
-              value:
-                'Medium reduction rate - IPPC Pathway Zero Emissions in 2050',
-              text: t('decisions.options.mediumReduction'),
-              scenario: { E: 3 },
-            }, */
             {
-              value: 'High reduction rate - Zero emissions in 2040',
-              text: t('decisions.options.highReduction'),
-              scenario: { E: 2 },
+              value: 'faster',
+              text: t('decisions.options.fasterPace'),
+              scenario: { E: 0 },
+            },
+          ],
+        },
+        {
+          name: 'biomass',
+          introText: t('decisions.biomass'),
+          options: [
+            {
+              value: 'y',
+              text: t('general.yes'),
+              scenario: { T: 0 },
+            },
+            {
+              value: 'n',
+              text: t('general.no'),
+              scenario: { T: 0 },
+            },
+          ],
+        },
+        {
+          name: 'crossBorder',
+          introText: t('decisions.crossBorder'),
+          info: t('decisions.info.crossBorder'),
+          options: [
+            {
+              value: 'y',
+              text: t('general.yes'),
+              scenario: { C: 0 },
+            },
+            {
+              value: 'n',
+              text: t('general.no'),
+              scenario: { C: 0 },
             },
           ],
         },
@@ -107,24 +132,36 @@ export const Decisions = () => {
       introText: t('decisions.2040.intro'),
       individualDecisions: [
         {
-          name: 'emissions3',
-          introText: t('decisions.keepEmission'),
+          name: 'ccs3',
+          introText: t('decisions.ccs'),
+          info: t('decisions.info.ccs'),
           options: [
             {
-              value: 'Low reduction rate – EU ETS cap',
-              text: t('decisions.options.lowReduction'),
+              value: 'y',
+              text: t('general.yes'),
+              scenario: { C: 0 },
+            },
+            {
+              value: 'n',
+              text: t('general.no'),
+              scenario: { C: 0 },
+            },
+          ],
+        },
+        {
+          name: 'emissions3',
+          introText: t('decisions.emissions'),
+          info: t('decisions.info.emissions'),
+          options: [
+            {
+              value: 'ets',
+              text: t('decisions.options.etsPace'),
               scenario: { E: 0 },
             },
-            /* {
-              value:
-                'Medium reduction rate - IPPC Pathway Zero Emissions in 2050',
-              text: t('decisions.options.mediumReduction'),
-              scenario: { E: 1 },
-            }, */
             {
-              value: 'High reduction rate - Zero emissions in 2040',
-              text: t('decisions.options.highReduction'),
-              scenario: { E: 1 },
+              value: 'faster',
+              text: t('decisions.options.fasterPace'),
+              scenario: { E: 0 },
             },
           ],
         },
